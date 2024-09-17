@@ -1,0 +1,21 @@
+
+n1 = int(input("enter first integer"))
+n2 = int(input("enter second integer"))
+
+print("Bitwise representation of n1 is ", bin(n1)[2:])
+print("Bitwise representation of n2 is ", bin(n2)[2:])
+
+print("result  of n1 & n2 is ", n1 & n2)
+print(bin(n1 & n2)[2:])
+print("result  of n1 | n2 is ", n1 | n2)
+print(bin(n1 | n2)[2:])
+print("result  of n1 ^ n2 is ", n1 ^ n2)
+print(bin(n1 ^ n2)[2:])
+print("result  of ~n1 is ", ~n1)
+print(bin(~n1)[3:])
+print("result  of ~n2 is ", ~n2)
+print(bin(~n2)[3:])
+print("result  of n1>>1 is ", n1>>1)
+print(bin(n1>>1)[2:])
+print("result  of n2<<1 is ", n2<<1)
+print(bin(n2<<1)[2:])

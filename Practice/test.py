@@ -1,6 +1,18 @@
-a ='1010'
-b = '1011'
-a = int(a, base=2)
-b = int(b, base=2)
-c = bin(a + b) [2:]
-print(c)
+path = "/../"
+
+if path.endswith("/"):
+    path = path[:-1]
+if "//" in path:
+    path = path.replace("//", "/")
+if "///" in path:
+    path = path.replace("///", "/")
+lst = []
+
+while ".." in path:
+    lst = list(path.split("/"))
+    lst.pop((lst.index("..") - 1))
+    lst.pop(lst.index(".."))
+    path = "/"
+    path += "/".join(lst)
+
+print(path)
