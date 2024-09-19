@@ -1,4 +1,8 @@
-days = int(input("Enter number of days"))
+try :
+    days = int(input("Enter number of days"))
+except:
+    days = 0
+    print("Entered value is not a number")
 
 years = days//365
 months = (days%365)//30

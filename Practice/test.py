@@ -1,18 +1,22 @@
-path = "/../"
+def checkByPass(anum,astr,atup,alist):
+    print(id(anum),id(astr),id(astr),id(alist))
+    anum +=1
+    astr+= astr
+    alist[1] = '$'
 
-if path.endswith("/"):
-    path = path[:-1]
-if "//" in path:
-    path = path.replace("//", "/")
-if "///" in path:
-    path = path.replace("///", "/")
-lst = []
+    print(anum,astr,atup,alist)
+    print(id(anum),id(astr),id(astr),id(alist))
 
-while ".." in path:
-    lst = list(path.split("/"))
-    lst.pop((lst.index("..") - 1))
-    lst.pop(lst.index(".."))
-    path = "/"
-    path += "/".join(lst)
 
-print(path)
+anum = 5
+bnum = 5
+
+astr = "banana"
+
+atup = tuple(astr)
+
+alist = list("banana")
+bstr = list("banana")
+
+
+checkByPass(anum,astr,atup,alist)

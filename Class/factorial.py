@@ -1,5 +1,8 @@
-a = int(input("Enter a number: "))
-fact =1;
-for i in range(2, int(a)):
-    fact *= i
-print(fact)
+def factorial(inp):
+    for i in range(1,inp):
+        inp *= i
+    return inp
+
+inp = int(input("Enter a number: "))
+
+print(factorial(inp))
