@@ -4,7 +4,7 @@ def si(p,r,t):
 def ci(p,r,t):
     return p*(1+r/100)**t
 
-n = int(input("Eneter the type of interest you want to calculate: 1. Simple Interest 2. Compound Interest"))
+n = int(input("Enter the type of interest you want to calculate: 1. Simple Interest 2. Compound Interest"))
 
 if n ==1:
     p = float(input("Enter the principal amount"))

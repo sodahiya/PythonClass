@@ -2,8 +2,6 @@
 f = open("mbox.txt", "r")
 lines  = f.readlines()
 
-format = "[0-9][0-9]:[0-9][0-9]:[0-9][0-9]"
-
 for line in lines:
     try:
         atpos = line.find("@")
